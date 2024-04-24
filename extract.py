@@ -1,3 +1,6 @@
+# Extracting Features File
+# Authored by Joe Liotta and Samuel Clear
+
 import pyshark
 import numpy as np
 
@@ -70,7 +73,6 @@ def get_stats(cap):
         else:
             final[flow_key] = stats
     return combined
-# END (sorry i just cant read python code lol)
 
 def main():
     fin = get_stats(capture)
